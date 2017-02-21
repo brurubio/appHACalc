@@ -1,0 +1,9 @@
+/* Empty. Add your own CSS if you like */
+.footer-block {
+    background-color: #133175;
+    height: 66px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+}
