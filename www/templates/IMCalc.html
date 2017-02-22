@@ -1,0 +1,57 @@
+<ion-view view-title="IMC Calculate" name="imc-view">
+
+  <ion-header-bar class="header-block">
+    <a ng-click="goBack()" style="text-decoration: none"
+      class="ion-ios-arrow-back"> Voltar
+    </a>
+    <h1 style="color:#fff;" class="title">IMC Calculate</h1>
+  </ion-header-bar>
+
+  <ion-pane>
+    <ion-content>
+      <div class="space-block">
+      </div>
+      <div class="form-block">
+        <form name="IMCForm">
+          <label>Altura (m)</label>
+          <input type="text" ng-model="imc.alt" required="required"/>
+          <label>Peso (kg)</label>
+          <input type="text" ng-model="imc.peso" required="required"/>
+          <div class="list">
+            <label class="item item-input item-select">
+              <div class="input-label">
+                Faixa Etária
+              </div>
+              <select ng-model="imc.select">
+                <option value="Selecione"> Selecione</option>
+                <option value="1">Criança (0-17 anos)</option>
+                <option value="2">Adulto (18 - 60 anos)</option>
+                <option value="3">Idoso (+60 anos)</option>
+              </select>
+            </label>
+          </div>
+          <div class="button-block">
+            <button ng-click="CalculateIMC()">Enviar</button>
+          </div>
+        </form>
+      </div>
+      <div id="hide">
+        <!--  -->
+        <h1>Resultado</h1>
+    </div>
+  </ion-content>
+  </ion-pane>
+
+  <ion-footer-bar class="footer-block">
+      <div class="footer-item">
+        <div class="footer-item">
+          <p style="font-size:25px;">0800 771 6915</p>
+        </div>
+        <p style="font-size:20px;">www.humanaalimentar.com.br</p>
+        <div class="footer-item">
+          <p style="font-size:13px;">Copyright &#169 | Humana Alimentar </p>
+        </div>
+      </div>
+  </ion-footer-bar>
+
+</ion-view>

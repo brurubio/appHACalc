@@ -1,9 +1,117 @@
 /* Empty. Add your own CSS if you like */
+.header-block{
+  background-color: #133175;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  color:#fff;
+}
+
+.header-block a {
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.content a {
+  cursor: pointer;
+}
+
 .footer-block {
     background-color: #133175;
-    height: 66px;
+    height: 100px;
     width: 100%;
     margin: auto;
     text-align: center;
-    position: absolute;
+    /*position: absolute;*/
+    padding: 10px;
+
+}
+
+.footer-item {
+   width: 100%;
+   display: inline-block;
+   position: relative;
+   margin: auto;
+   clear:both;
+   color:#fff;
+}
+
+.space-block {
+    height: 60px;
+}
+
+.form-block {
+    width: 86%;
+    height: auto;
+    padding: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border-top: 5px solid #133175; /*#ff656c;*/
+    border-bottom: 5px solid #133175; /*#ff656c;*/
+    margin: 0 auto;
+    font-family: Montserrat;
+}
+
+.form-block h1 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.form-block label {
+    color: #133175;
+    font-size: 17px;
+    font-family: Montserrat;
+}
+
+.form-block input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 0 20px 0 50px;
+    outline: none;
+}
+
+.form-block input:active, .form-block input:focus {
+    border: 1px solid #133175; /*#ff656c;*/
+}
+
+.button-block {
+    width: 100%;
+    height: 60px;
+}
+
+.button-block button {
+    width: 100%;
+    height: 40px;
+    background: #133175; /*#ff656c;*/
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #133175;/*#e15960;*/
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-block button:hover  {
+    background: #20418E;/*#ff7b81;*/
+}
+
+.input-label {
+    color: #133175;
 }
