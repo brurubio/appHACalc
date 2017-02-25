@@ -1,5 +1,5 @@
 <ion-view view-title="IMC Calculate" name="imc-view">
-
+  <ion-pane>
   <ion-header-bar class="header-block">
     <a ng-click="goBack()" style="text-decoration: none"
       class="ion-ios-arrow-back"> Voltar
@@ -7,8 +7,9 @@
     <h1 style="color:#fff;" class="title">IMC Calculate</h1>
   </ion-header-bar>
 
-  <ion-pane>
-    <ion-content>
+
+    <ion-content has-bouncing="false" class="has-footer">
+      <!-- <ion-scroll direction="y" has-bouncing="false" style="height: auto;"> -->
       <div class="space-block">
       </div>
       <div class="form-block">
@@ -17,40 +18,67 @@
           <input type="text" ng-model="imc.alt" required="required"/>
           <label>Peso (kg)</label>
           <input type="text" ng-model="imc.peso" required="required"/>
+          <label>Idade</label>
+          <input type="text" ng-model="imc.idade" required="required"/>
+          <!-- <div class="sexButtons">
+              <label>Sexo</label>
+              <a class="button button-icon icon ion-woman"></a>
+              <a class="button button-icon icon ion-man"></a>
+          </div> -->
+          <label>Sexo</label>
           <div class="list">
             <label class="item item-input item-select">
               <div class="input-label">
-                Faixa Etária
+                <!-- Selecione -->
               </div>
-              <select ng-model="imc.select">
-                <option value="Selecione"> Selecione</option>
-                <option value="1">Criança (0-17 anos)</option>
-                <option value="2">Adulto (18 - 60 anos)</option>
-                <option value="3">Idoso (+60 anos)</option>
+              <select name="sex" ng-model="imc.sexSelect">
+                <option value=""> Selecione</option>
+                <option value="1">Feminino</option>
+                <option value="2">Masculino</option>
               </select>
             </label>
           </div>
+          <!-- <div class="list">
+            <label class="item item-input item-select">
+              <div class="input-label">
+              </div>
+              <select name="idade" ng-model="imc.idadeSelect">
+                <option value="">Selecione</option>
+                <option value="1">Criança (0-15 anos)</option>
+                <option value="2">Adulto (+15 anos)</option>
+              </select>
+            </label>
+          </div> -->
           <div class="button-block">
             <button ng-click="CalculateIMC()">Enviar</button>
           </div>
         </form>
+        <div id="hide">
+          <hr>
+            <h1>Resultado:</h1>
+          <!--  -->
+          <!-- <p id="result"></p> -->
+          <div id="result-block">
+            <h1 id="result-text" style="color:#262525;">{{result}}</h1>
+            <!-- <img style="position:absolute; TOP:35px; LEFT:170px; WIDTH:50px; HEIGHT:50px" scr="circle.gif"> -->
+            <i class="icon ion-arrow-down-b" style="color:#262525;position:absolute; top:545px; left:{{xvalue}};"></i>
+          </div>
+        </div>
       </div>
-      <div id="hide">
-        <!--  -->
-        <h1>Resultado</h1>
-    </div>
+      <br>
+    <!-- </ion-scroll> -->
   </ion-content>
   </ion-pane>
 
   <ion-footer-bar class="footer-block">
       <div class="footer-item">
-        <div class="footer-item">
+        <!-- <div class="footer-item">
           <p style="font-size:25px;">0800 771 6915</p>
         </div>
         <p style="font-size:20px;">www.humanaalimentar.com.br</p>
-        <div class="footer-item">
+        <div class="footer-item"> -->
           <p style="font-size:13px;">Copyright &#169 | Humana Alimentar </p>
-        </div>
+        <!-- </div> -->
       </div>
   </ion-footer-bar>
 
