@@ -46,40 +46,289 @@ angular.module('starter.controllers', [])
            //e é criança e menina
           if ($scope.imc.sexSelect == "1") {
 
-            // if ($scope.imc.idade == "6"){
-            //   if ($scope.result < 14.3) {
-            //     $scope.result = $scope.result + " - Abaixo do Peso";
-            //   } else if ($scope.result >= 14.3 && $scope.result <= 16.1) {
-            //     $scope.result = $scope.result + " - Normal";
-            //   } else if ($scope.result > 16.1 && $scope.result <= 17.4) {
-            //     $scope.result = $scope.result + " - Sobrepeso";
-            //   } else if ($scope.result > 17.4) {
-            //     $scope.result = $scope.result + " - Obesidade";
-            //   }
-            // } else if ($scope.imc.idade == "7"){
-            //   if ($scope.result < 14.9) {
-            //     $scope.result = $scope.result + " - Abaixo do Peso";
-            //   } else if ($scope.result >= 14.9 && $scope.result <= 17.1) {
-            //     $scope.result = $scope.result + " - Normal";
-            //   } else if ($scope.result > 17.1 && $scope.result <= 18.9) {
-            //     $scope.result = $scope.result + " - Sobrepeso";
-            //   } else if ($scope.result > 18.9) {
-            //     $scope.result = $scope.result + " - Obesidade";
-            //   }
-            // } else if ($scope.imc.idade == "8"){
-            //   if ($scope.result < 15.6) {
-            //     $scope.result = $scope.result + " - Abaixo do Peso";
-            //   } else if ($scope.result >= 15.6 && $scope.result <= 18.1) {
-            //     $scope.result = $scope.result + " - Normal";
-            //   } else if ($scope.result > 18.1 && $scope.result <= 20.3) {
-            //     $scope.result = $scope.result + " - Sobrepeso";
-            //   } else if ($scope.result > 20.3) {
-            //     $scope.result = $scope.result + " - Obesidade";
-            //   }
-            // }
-
+            if ($scope.imc.idade == "6"){
+              if ($scope.result < 14.3) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 14.3 && $scope.result <= 16.1) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 16.1 && $scope.result <= 17.4) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 17.4) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "7"){
+              if ($scope.result < 14.9) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 14.9 && $scope.result <= 17.1) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 17.1 && $scope.result <= 18.9) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 18.9) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "8"){
+              if ($scope.result < 15.6) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 15.6 && $scope.result <= 18.1) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 18.1 && $scope.result <= 20.3) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 20.3) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "9"){
+              if ($scope.result < 16.3) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 16.3 && $scope.result <= 19.1) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 19.1 && $scope.result <= 21.7) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 21.7) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "10"){
+              if ($scope.result < 17) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 17 && $scope.result <= 20.1) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 20.1 && $scope.result <= 23.2) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 23.2) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "11"){
+              if ($scope.result < 17.6) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 17.6 && $scope.result <= 21.1) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 21.1 && $scope.result <= 24.5) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 24.5) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "12"){
+              if ($scope.result < 18.3) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 18.3 && $scope.result <= 22.1) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 22.1 && $scope.result <= 25.9) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 25.9) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "13"){
+              if ($scope.result < 18.9) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 18.9 && $scope.result <= 23) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 23 && $scope.result <= 27.7) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 27.7) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "14"){
+              if ($scope.result < 19.3) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 19.3 && $scope.result <= 23.8) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 23.8 && $scope.result <= 27.9) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 27.9) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "15"){
+              if ($scope.result < 19.6) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 19.6 && $scope.result <= 24.2) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 24.2 && $scope.result <= 28.8) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 28.8) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            }
           } else { //se é criança e menino
-
+            if ($scope.imc.idade == "6"){
+              if ($scope.result < 14.5) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 14.5 && $scope.result <= 16.6) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 16.6 && $scope.result <= 18.0) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 18.0) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "7"){
+              if ($scope.result < 15.0) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 15.0 && $scope.result <= 17.3) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 17.3 && $scope.result <= 19.1) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 19.1) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "8"){
+              if ($scope.result < 15.6) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 15.6 && $scope.result <= 16.7) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 16.7 && $scope.result <= 20.3) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 20.3) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "9"){
+              if ($scope.result < 16.1) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 16.1 && $scope.result <= 18.8) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 18.8 && $scope.result <= 21.4) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 21.4) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "10"){
+              if ($scope.result < 16.7) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 16.7 && $scope.result <= 19.6) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 19.6 && $scope.result <= 22.5) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 22.5) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "11"){
+              if ($scope.result < 17.2) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 17.2 && $scope.result <= 20.3) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 20.3 && $scope.result <= 23.7) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 23.7) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "12"){
+              if ($scope.result < 17.8) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 17.8 && $scope.result <= 21.1) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 21.1 && $scope.result <= 24.8) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 24.8) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "13"){
+              if ($scope.result < 18.5) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 18.5 && $scope.result <= 21.9) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 21.9 && $scope.result <= 25.9) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 25.9) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "14"){
+              if ($scope.result < 19.2) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 19.2 && $scope.result <= 22.7) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 22.7 && $scope.result <= 26.9) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 26.9) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            } else if ($scope.imc.idade == "15"){
+              if ($scope.result < 19.9) {
+                $scope.result = $scope.result + " - Abaixo do Peso";
+                $scope.xvalue = "125px";
+              } else if ($scope.result >= 19.9 && $scope.result <= 23.6) {
+                $scope.result = $scope.result + " - Normal";
+                $scope.xvalue = "190px";
+              } else if ($scope.result > 23.6 && $scope.result <= 27.7) {
+                $scope.result = $scope.result + " - Sobrepeso";
+                $scope.xvalue = "250px";
+              } else if ($scope.result > 27.7) {
+                $scope.result = $scope.result + " - Obesidade";
+                $scope.xvalue = "305px";
+              }
+            }
           }
         } else { // se é adulto
           if ($scope.result <= 18.49) {
