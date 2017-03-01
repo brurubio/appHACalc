@@ -331,22 +331,29 @@ angular.module('starter.controllers', [])
             }
           }
         } else { // se é adulto
+          var pesomin = ($scope.imc.peso*18.5)/parseFloat(calcimc).toFixed(2);
+          var pesomax = ($scope.imc.peso*24.99)/parseFloat(calcimc).toFixed(2);
+          $scope.range = "Peso ideal: " + parseFloat(pesomin).toFixed(2)  + " - " + parseFloat(pesomax).toFixed(2) + " Kg";
           if ($scope.result <= 18.49) {
               $scope.result = $scope.result + " - Abaixo do Peso";
                document.getElementById("result-text").style.color = "#ffef03";
-               $scope.xvalue = "125px";
+              //  $scope.xvalue = "125px";
+              $scope.xvalue = "33%";
             } else if ($scope.result >= 18.50 && $scope.result <= 24.99) {
               $scope.result = $scope.result + " - Normal";
               document.getElementById("result-text").style.color = "#50d524";
-              $scope.xvalue = "190px";
+              // $scope.xvalue = "190px";
+              $scope.xvalue = "50%";
             } else if ($scope.result >= 25 && $scope.result <= 29.99) {
               $scope.result = $scope.result + " - Sobrepeso";
               document.getElementById("result-text").style.color = "#ffef03";
-              $scope.xvalue = "250px";
+              // $scope.xvalue = "250px";
+              $scope.xvalue = "69%";
             } else if ($scope.result >= 30) {
               $scope.result = $scope.result + " - Obesidade";
               document.getElementById("result-text").style.color = "#ff3002";
-              $scope.xvalue = "305px";
+              // $scope.xvalue = "305px";
+              $scope.xvalue = "83%";
             }
          }
         document.getElementById("hide").style.display = "inline";
